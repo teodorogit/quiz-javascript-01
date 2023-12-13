@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+}
+
+.quiz-container {
+
+    text-align: center;
+    box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.1);
+    padding: 20px;
+    background-image:url(https://www.papeiseparede.com.br/6944-thickbox_default/papel-de-parede-mapa-politico-do-brasil.jpg.webp);
+    background-size: cover;
+    background-position: bottom;
+    border-radius: 10px;
+    width: 500px;
+}
+
+.choice {
+    margin: 10px;
+    border: 1px solid #333;
+    min-width: 75px;
+    border-radius: 2px;
+    padding: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.choice:hover {
+    transform: translateY(-5px) scale(1.1);
+    background-color: rgba(198, 215, 242, 0.984);
+}
+
+#next {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s;
+    border-radius: 10px;
+}
+
+#next:hover {
+    background-color: #125eb0;
+} 
+
+
+#score, #wrong {
+    font-size: 1.2rem;
+    color:#555;
+    margin-top: 20px;
+    background-color: white;
+}
+
+
+@media(max-width:380px){
+    .quiz-container {
+        padding: 10px;
+        background-size: cover;
+        background-position: bottom;
+        border-radius: 10px;
+        max-width: 300px;
+    }
+    #choices {
+        display: grid;
+       grid-template-columns: 1fr ;
+       gap: 10px;
+    }
+    .choice {
+        width: 200px;
+        margin: 0 auto;
+        
+    }
+}
